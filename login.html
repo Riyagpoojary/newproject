@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .image-form{
+          text-align: center;
+        }
+        .signin-form {
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(169, 16, 16, 0.1);
+            width: 300px;
+            text-align: center;
+           
+        }
+        .sigh-in{
+          color: red;
+          text-align: left;
+        }
+        .form-group{
+          margin-bottom: 10px;
+          text-align:left;
+          color: green;
+        }
+        .form-group1{
+          margin-bottom: 10px;
+          text-align:left;
+           }
+        .signin-form input {
+            width: 100%;
+            padding:10px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        } 
+        .signin-form button {
+            width: 100%;
+            padding: 20px;
+            background-color: #286ca7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .signin-form button:hover {
+            background-color: #286ca7;
+        }
+        .color-blue {
+          color: #286ca7;
+        }
+    </style>
+</head>
+ <body> 
+    
+  <div    class="signin-form" >
+  <div class="image-form">
+      <img src="C:\Users\Riya G Poojary\OneDrive\Desktop\task\cymonix-color (3).svg" alt="Description of image"  width="300px" height="100px" >
+  </div>
+  
+   <h1 class="sigh-in">Sign in</h1>
+   <p> Welcome Back!</p>
+
+    <form action="/submit"method="post">
+      
+      <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" id="email" name="email"placeholder="email"required><br></br>
+      </div>
+
+       <div class="form-group1">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"placeholder="password" required>
+      </div>
+      <a class ="color-blue" href="/forgot-password" id="forgot-password">Forgot Password?</a><br></br>
+
+      <button type="submit">Sign in</button>
+      <p>Don't have an account?</p><a class ="color-blue" href="/sign up" id="sign-up">Sign Up</a><br></br>
+      <a href="/reset-mfa" class ="color-blue">Reset MFA</a><br></br>
+    
+    </form>
+    </div>
+  </body>
+</html> 
